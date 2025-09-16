@@ -8,10 +8,10 @@ const hitung = () => {
     let op = document.getElementById("jenisSuhu").value;
     let hasil ;
 
-if (op === "f") hasil = fahrenheit (a);
-else if (op === "k") hasil = kelvin (a);
-else if (op === "r") hasil = reamur (a);
-else hasil = "operator tidak valid";
+    if (op === "f") hasil = fahrenheit (a);
+    else if (op === "k") hasil = kelvin (a);
+    else if (op === "r") hasil = reamur (a);
+    else hasil = "operator tidak valid";
 
-    document.getElementById("hasil").textContent = `Hasil: ${hasil}`;
+document.getElementById("hasil").textContent = `Hasil: ${hasil}`;
 }
