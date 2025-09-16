@@ -5,9 +5,11 @@ const user = {
         //Arrow function ini mewarisi 'this' dari 'sayHi'
         setTimeout(() =>{
             //Disini, 'this' tetap merujuk ke objek 'user'
-            console.log(`Setelah 1 detik, nama saya${this.nama}`);
+            console.log(`Setelah 1 detik, nama saya ${this.nama}`);
         }, 1000);
         }
     };
 user.sayHi();
-//
+//Output:
+//Hallo nama saya Budi
+//Setelah 1 detik, nama saya Budi
